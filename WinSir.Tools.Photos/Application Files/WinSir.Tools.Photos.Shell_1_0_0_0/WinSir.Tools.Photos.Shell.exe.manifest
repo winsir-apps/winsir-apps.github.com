@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WinSir.Tools.Photos.Shell.exe" version="1.0.0.0" publicKeyToken="85125f5a9b1930f6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WinSir.Tools.Photos.Shell" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="WinSir.Tools.Photos.Shell.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" ID="Custom" SameSite="site">
+          <IPermission Read="USERNAME" version="1" class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          <IPermission version="1" class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+          <IPermission version="1" Permanent="True" Expiry="9223372036854775807" UserQuota="9223372036854775807" Allowed="AssemblyIsolationByUser" class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+          <IPermission version="1" class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="ReflectionEmit, RestrictedMemberAccess" />
+          <IPermission version="1" class="System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Flags="Assertion, Execution, BindingRedirects" />
+          <IPermission version="1" class="System.Security.Permissions.UIPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+          <IPermission version="1" class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Level="DefaultPrinting" />
+          <IPermission version="1" class="System.Security.Permissions.MediaPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Audio="SafeAudio" Image="SafeImage" Video="SafeVideo" />
+          <IPermission version="1" class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Level="Safe" />
+          <IPermission version="1" class="System.Net.DnsPermission, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Unrestricted="true" />
+        </PermissionSet>
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinSir.Tools.Photos.dll" size="24576">
+      <assemblyIdentity name="WinSir.Tools.Photos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Sx0FYkOY5KqyJ/xg8OH05Cvh7CQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinSir.Tools.Photos.Shell.exe" size="12800">
+      <assemblyIdentity name="WinSir.Tools.Photos.Shell" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JcfEAJQd5w2PipoBBRc7uKJmBqQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="WinSir.Tools.Photos.Shell.exe.config" size="973">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TVM5ki6dZ5s7lnbdwEiRxuO2GSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=WinSir" issuerKeyHash="b7e5741a73ef1042acb929a685e71545523f675a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>QIrkd+pfZeSMy+0wcVAvB6rK4SY=</DigestValue></Reference></SignedInfo><SignatureValue>qvc+iraeHcJQdD+txWw3NdP1JzSvC+p9iG3WoIgfdA6K5iZm/sLrVRqxWeKc1XAmnq0AuHVye6bPFwemUmsurmciV2iphJ3C4473UJ3S/LA4vFtfb7C+zPrcGNpgKPuqssVaUHoTOqXnL3aBfzim6se99s49jBqgPQanoOzMbG3FyoPdIV3WD0rS4Yd2zo6+cl2exQxVrUwpnqJZ0qUktyasa3SnsgASwLZEWGp1EqoSsvAbIf76sQbFwOsQRvZswZijZiR+GcZ+JG/xKRdQiIp1rOWW4plgdAwDWMHWNpBOn0dYG9JBqO3p0tsODV0m11EfsEJpwaRugipRYzVUtQ==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rImwHGdXGa29bUO3FyKYnRWafUK52xilS0cQ5SaVYcdtRB8gdylGPU8TsF5IMHku11Qx8rm1PA+7EpMnN1haLqsIM6siWO9vrJBSN7EB9yPDAVMk2wtkywSBTRLHfyqP2+Z5sprbPRlFqTQsYu6PDhW96xVQ4Q3tNmtmNC+XM1j4qxhNRX0UZqxXQ7/gdwK7OdaxMne1hdHYO2zvwvTXfIGrjYxr/fICLqLkQpkpv8JoTlyilPNA6w682EZV/u7Im0eanp5s5kCoVDXiuSAZcDctW3j5DoydRcmjkqgaCp4cKwZC0tgQh4AzK2m9W+E5T6OmLYNuQK475fvhcSt0Fw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="26e1caaa072f507130edcb8ce4655fea77e48a40" Description="" Url=""><as:assemblyIdentity name="WinSir.Tools.Photos.Shell.exe" version="1.0.0.0" publicKeyToken="85125f5a9b1930f6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=WinSir</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WVFWSzBB1hn8gAxOxwT+3F/7ZRI=</DigestValue></Reference></SignedInfo><SignatureValue>jIPeFWx3IDnDimuf2KQJGieJMHgUf8FUgAugVknS2qMF4jDyFgP4nHeZN4jAz6xSTJ/5LD5zxzDlzn/fyY6mpVPG4ZIe1M0VjRJxlULZ38VwXPzobPajerGDUItHRnb05ubwg9Sg0s1xNSc8pO/QYr6UnnL3ToOHC6T/2BUqVYy98taHgeXXjUwTRtkial6I60MnQwr+/Mj2Acbx9BOlmZ8HH/YCwW2D/ie7xWwHIkpsNkaoNRF9AGc7BuzbE1USOBhEC/rlOYSeugN4pfZu5qOr+ccp1vV/VRtyKb01hM9r5VogITDAhYFqoaEsJCeqnrKDcJV6JBXbR5LiiurNdw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rImwHGdXGa29bUO3FyKYnRWafUK52xilS0cQ5SaVYcdtRB8gdylGPU8TsF5IMHku11Qx8rm1PA+7EpMnN1haLqsIM6siWO9vrJBSN7EB9yPDAVMk2wtkywSBTRLHfyqP2+Z5sprbPRlFqTQsYu6PDhW96xVQ4Q3tNmtmNC+XM1j4qxhNRX0UZqxXQ7/gdwK7OdaxMne1hdHYO2zvwvTXfIGrjYxr/fICLqLkQpkpv8JoTlyilPNA6w682EZV/u7Im0eanp5s5kCoVDXiuSAZcDctW3j5DoydRcmjkqgaCp4cKwZC0tgQh4AzK2m9W+E5T6OmLYNuQK475fvhcSt0Fw==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIC7DCCAdigAwIBAgIQLN1df7B/2rFBj3yl9Egh0TAJBgUrDgMCHQUAMBExDzANBgNVBAMTBldpblNpcjAgFw0xMjEyMzExNjAwMDBaGA8yMDk5MTIzMDE2MDAwMFowETEPMA0GA1UEAxMGV2luU2lyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArImwHGdXGa29bUO3FyKYnRWafUK52xilS0cQ5SaVYcdtRB8gdylGPU8TsF5IMHku11Qx8rm1PA+7EpMnN1haLqsIM6siWO9vrJBSN7EB9yPDAVMk2wtkywSBTRLHfyqP2+Z5sprbPRlFqTQsYu6PDhW96xVQ4Q3tNmtmNC+XM1j4qxhNRX0UZqxXQ7/gdwK7OdaxMne1hdHYO2zvwvTXfIGrjYxr/fICLqLkQpkpv8JoTlyilPNA6w682EZV/u7Im0eanp5s5kCoVDXiuSAZcDctW3j5DoydRcmjkqgaCp4cKwZC0tgQh4AzK2m9W+E5T6OmLYNuQK475fvhcSt0FwIDAQABo0YwRDBCBgNVHQEEOzA5gBBgZQbKyEGIhZxTxLKSkK0ooRMwETEPMA0GA1UEAxMGV2luU2lyghAs3V1/sH/asUGPfKX0SCHRMAkGBSsOAwIdBQADggEBAD4tT41XG9EyNv4ly6LPUN/qPefxHRfhPIbvOsup2jfasAXzNSb7rRhe71jTd9wcD8DRUM9Wx9ybBmCO5PXaF7TV3CRvIpFv4DMYHQUm5HJeZbtnCVoeADa6Hyx5jqPPQLfVDod46uUxoOlgSsp2aqQty8i1fKLPKwK9pce+rtVEHhi7CWOYxis/rmc0ogWZwiC89bUsnOP17zULpStdxVs2i7VDDYANGNYNsSKlO3Bul05c5RZMrw+wo7TAfNBuPQSGRNtzshlPTPgutmpvGRyUACEHgp1ZDPrPmLhzbqAgHgHcULlbVinWom5+a+0zsgB6aXBvKdQCGcFMe+TRQ3w=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
